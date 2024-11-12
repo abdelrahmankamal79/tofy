@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/yes_style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Section with Image and Text Side-by-Side -->
+    <section>
+      <div class="container py-5">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6 text-center">
+            <div class="pageContent">
+              <img src="images/16.jpeg" class="img-fluid" alt="Description" />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5">
+            <p>
+              كل سنة وانتي طيبة يا احلي حاجة حصلت في حياتي وعقبال مليون سنة جمبي
+              ومعايا وفي حضني و متحرمش منك ابدا يارب ودايما اشوفك مبسوطة وفرحانة
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <p>
+              بحب كل لحظة قضيناها سوا من اول ما عرفنا بعض ولحد ما بقينا مع بعض
+              كل صورة ليها ذكري حلوة ووقت حلو عيشناه سوا بيقربنا اكتر من بعض
+              وبيعلقنا اكتر ببعض
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="slidersection" style="max-width: 350px">
+              <img
+                class="mySlides"
+                src="images/1111.jpeg"
+                style="width: 100%"
+              />
+              <img class="mySlides" src="images/1.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/2.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/4.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/5.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/6.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/7.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/8.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/9.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/10.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/11.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/12.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/13.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/14.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/15.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/16.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/17.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/18.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/19.jpeg" style="width: 100%" />
+              <img class="mySlides" src="images/20.jpeg" style="width: 100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center lastContent">
+        <p class="mt-5">
+          وفهمت عينيك مانا خدت عليك ...حبنا بيزيد جوانا ..يارب دايما يزيد وميقلش
+          ابدا ودايما مع بعض في كل الاوقات الوحشة قبل الحلوة مهما اتخانقنا
+          وزعلنا من بعض بنرجع نفهم بعض ومبنحبش زعلنا يطول
+        </p>
+        <p></p>
+        <p>بحبك اووووي يا اغلي حاجة في حياتي كلها</p>
+      </div>
+      <div>
+        <audio controls autoplay loop>
+          <source src="audio/08.We_Fehemt_Einak.mp3" />
+        </audio>
+      </div>
+    </section>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
